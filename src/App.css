@@ -1,0 +1,371 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    cursor: pointer;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+   
+}
+.icon a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+i{
+    font-size: 1.2rem;
+}
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.case-registration {
+   
+}
+
+.app-container {
+    display: flex;
+}
+
+.sidebar {
+    flex-shrink: 0;
+}
+/* navbar */
+.app-container {
+    display: flex;
+    height: 100%;
+    background: #ebe9e9;
+  }
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 270px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s;
+    background: rgba(113, 99, 186, 255);
+}
+.logo{
+    height: 60px;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.menu li:hover,
+.active{
+   background: #e0e0e058;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu a i{
+    font-size: 1.2rem;
+}
+.header-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #f0f0f0;
+    border-bottom: 2px solid #ddd;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(113, 99, 186, 255);
+}
+
+.header-title span {
+    font-size: 14px;
+    color: #666;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button:first-of-type {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.buttons button:last-of-type {
+    background-color: #28a745;
+    color: #fff;
+}
+/* navbar */
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #ebe9e9;
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 3px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0px 12px 0px;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+}
+.user-details .input-box .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input{
+    display: block;
+    height: 45px;
+    width: 100%; 
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+}
+.user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.user-details .input-box .input:focus,
+.user-details .input-box .input:valid{
+    border-color: #9b59b6;
+}
+.input-box {
+    flex: 1; 
+    margin: 10px; 
+    min-width: 200px; 
+}
+
+.input-box .details {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.input-box input {
+    height: 45px;
+    width: 100%;
+    padding: 0 10px; 
+    box-sizing: border-box; 
+}
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.gender-details .category label{
+   display: flex;
+   align-items: center;
+}
+.gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#dot-1:checked ~ .category .one,
+#dot-2:checked ~ .category .two,
+#dot-3:checked ~ .category .three{
+   border-color: #d9d9d9;
+   background: #575151;
+}
+form input[type='radio']{
+    display: none;
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+form .button input:hover{
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+.select{
+    display: flex;
+    height: 45px;
+    width: 100%; 
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+}
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .app-container {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      padding: 10px 20px;
+      background: rgba(113, 99, 186, 255); /* Keeping the background color consistent */
+    }
+  
+    .sidebar .icon, .sidebar .menu {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .sidebar .menu {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      padding: 0;
+    }
+  
+    .menu li {
+      margin: 5px 0;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 5px;
+    }
+  
+    .menu a {
+      font-size: 14px;
+      gap: 1rem;
+    }
+  
+    .main-content {
+      padding: 10px;
+    }
+  
+    .header-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .header-title {
+      font-size: 20px;
+    }
+  
+    .header-title span {
+      font-size: 12px;
+    }
+  
+    .buttons {
+      width: 100%;
+      margin-top: 10px;
+      justify-content: space-between;
+    }
+  
+    .buttons button {
+      flex: 1;
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .case-registration {
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .input-box {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .input-box input, .select {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+
+@media  (max-width:584px){
+    .container{
+        max-width: 100%;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .gender-details .category{
+        width: 100%;
+    }
+}
